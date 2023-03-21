@@ -3,10 +3,10 @@
   tasks:
 
     - name: removing old containers
-      shell: docker ps -aq --filter name="scientific-calculator" | xargs docker stop | xargs docker rm
+      shell: docker ps -aq --filter name="spe_mini_project_calculator" | xargs docker stop | xargs docker rm
 
     - name: pull image
-      shell: docker pull av2000/scientific-calculator:latest
+      shell: docker pull adrijsharma/spe_mini_project_calculator
       
     - name: run container
-      shell: docker run -i -t --name scientific-calculator -d av2000/scientific-calculator
+      shell: docker run -i -t --name spe_mini_project_calculator -d adrijsharma/spe_mini_project_calculator
