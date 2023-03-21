@@ -20,15 +20,15 @@ pipeline {
                 git 'https://github.com/adrijsharma0408/SPE_MiniProject_Calculator.git'
             }
         }
-        stage('Build') {
+        stage('maven Build') {
             steps {
                 // Run Maven on a Unix agent.
                 sh "mvn clean install"
             }
         }
-        stage('Docker Image') {
-            steps {
-                sh 'docker build -t adrijsharma/spe_mini_project_calculator:latest .'
+        stage('Docker build Image') {
+            script {
+                    dockerImage = docker.build(registry + ":latest")
             }
         }
     }
