@@ -9,7 +9,7 @@ pipeline {
     environment
     {
         registry = "adrijsharma/spe_mini_project_calculator"
-        registryCredential = "sciCalc dockerhub repo access"
+        registryCredential = "DockerToken"
         dockerImage = ""
     }
 
