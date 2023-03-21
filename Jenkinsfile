@@ -5,6 +5,13 @@ pipeline {
         // Install the Maven version configured as "M3" and add it to the path.
         maven "Maven"
     }
+    
+    environment
+    {
+        registry = "adrijsharma/spe_mini_project_calculator"
+        registryCredential = "sciCalc dockerhub repo access"
+        dockerImage = ""
+    }
 
     stages {
         stage('Clone') {
