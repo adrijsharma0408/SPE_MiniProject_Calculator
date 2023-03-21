@@ -2,4 +2,4 @@
 Scientific Calculator
 
 This is my calc
-New1
+Ne
