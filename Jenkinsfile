@@ -28,9 +28,7 @@ pipeline {
         }
         stage('Docker Image') {
             steps {
-                script {
-                    dockerImage = docker.build(registry + ":latest")
-                }
+                sh 'docker build -t adrijsharma/spe_mini_project_calculator:latest .'
             }
         }
     }
