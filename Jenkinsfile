@@ -27,9 +27,12 @@ pipeline {
             }
         }
         stage('Docker build Image') {
-            script {
+             steps {
+                script {
                     dockerImage = docker.build(registry + ":latest")
+                }
             }
+            
         }
     }
 }
