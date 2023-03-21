@@ -19,5 +19,12 @@ pipeline {
                 sh "mvn clean install"
             }
         }
+//         stage('Docker Image') {
+//             steps {
+//                 script {
+//                     dockerImage = docker.build(registry + ":latest")
+//                 }
+//             }
+//         }
     }
 }
