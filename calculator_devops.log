@@ -1,4 +1,0 @@
-23/Mar/2023:00:54:15 129 [App.java] [INFO] App factorial_function_for 5, Result 120
-23/Mar/2023:00:54:15 182 [App.java] [INFO] App naturalLog_function_for 2.718, Result 0.999896315728952
-23/Mar/2023:00:54:15 195 [App.java] [INFO] App sqrRoot_function_for 25.0, Result 5.0
-23/Mar/2023:00:54:15 200 [App.java] [INFO] App power_function_for 2.0, Result 32.0
