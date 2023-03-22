@@ -1,3 +1,4 @@
+---
 - name: Pull and run docker image
   hosts: localhost
   tasks:
