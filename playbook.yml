@@ -1,13 +1,14 @@
 ---
-- name: Pull and run docker image
-  hosts: localhost
+- name: Pull docker image of Calculator
+  hosts: all
   tasks:
+    - name: Start docker service
+      service:
+        name: docker
+        state: started
 
-    - name: removing old containers
-      shell: docker ps -aq --filter name="spe_mini_project_calculator" | xargs docker stop | xargs docker rm
-
-    - name: pull image
+    - name: pull docker image
       shell: docker pull adrijsharma/spe_mini_project_calculator
-      
-    - name: run container
-      shell: docker run -i -t --name spe_mini_project_calculator -d adrijsharma/spe_mini_project_calculator
+
+    - name: running container
+      shell: docker run -it -d adrijsharma/spe_mini_project_calculator
