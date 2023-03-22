@@ -73,7 +73,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("Executing squareRoot function!");
+		logger.info("sqrRoot_function_for " + num + ", Result " + c);
 		return c;
 	}
 
@@ -83,7 +83,7 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("Executing Factorial function!");
+		logger.info("factorial_function_for " + num + ", Result " + c);
 		return c;
 	}
 	public static double naturalLog(double num){
@@ -91,15 +91,15 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("Executing naturalLog function!");
+		logger.info("naturalLog_function_for " + num + ", Result " + c);
 		return c;
 	}
-	  public static double power(double num, double exp){
+	public static double power(double num, double exp){
 		double c = Math.pow(num,exp);
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("Executing Power function!");
+		logger.info("power_function_for " + num + ", Result " + c);
 		return c;
 	}
 
