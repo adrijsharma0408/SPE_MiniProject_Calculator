@@ -14,19 +14,19 @@ pipeline {
     }
 
     stages {
-        stage('Clone') {
+        stage('Pull from GitHub') {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/adrijsharma0408/SPE_MiniProject_Calculator.git'
             }
         }
-        stage('maven Build') {
+        stage('Maven Build') {
             steps {
                 // Run Maven on a Unix agent.
                 sh "mvn clean install"
             }
         }
-        stage('Docker build Image') {
+        stage('Docker Build Image') {
              steps {
                 script {
                     dockerImage = docker.build(registry + ":latest")
@@ -50,7 +50,7 @@ pipeline {
             }
         }
         
-        stage('Ansible pull image') {
+        stage('Ansible Pull Image') {
             steps {
                 ansiblePlaybook colorized: true,
                 installation: 'Ansible',
