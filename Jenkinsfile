@@ -44,7 +44,7 @@ pipeline {
             }
         }
         
-        stage('Clean Up') {
+        stage('Docker Image Remove') {
             steps {
                 sh "docker rmi $registry:latest" 
             }
