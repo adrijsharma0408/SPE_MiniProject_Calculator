@@ -73,7 +73,10 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("sqrRoot_function_for " + num + ", Result " + c);
+
+		logger.info("[SQUARE_ROOT OPERATION] [SUCCESS] " + num);
+        logger.info("[SQUARE_ROOT OPERATION] [RESULT] " + c);
+
 		return c;
 	}
 
@@ -83,7 +86,10 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("factorial_function_for " + num + ", Result " + c);
+		
+		logger.info("[FACTORIAL OPERATION] [SUCCESS] " + num);
+        logger.info("[FACTORIAL OPERATION] [RESULT] " + c);
+
 		return c;
 	}
 	public static double naturalLog(double num){
@@ -91,7 +97,10 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("naturalLog_function_for " + num + ", Result " + c);
+
+		logger.info("[LOGARITHM OPERATION] [SUCCESS] " + num);
+        logger.info("[LOGARITHM OPERATION] [RESULT] " + c);
+		
 		return c;
 	}
 	public static double power(double num, double exp){
@@ -99,7 +108,10 @@ public class App {
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("power_function_for " + num + ", Result " + c);
+		
+		logger.info("[POWER OPERATION] [SUCCESS] " + num);
+        logger.info("[POWER OPERATION] [RESULT] " + c);
+
 		return c;
 	}
 
